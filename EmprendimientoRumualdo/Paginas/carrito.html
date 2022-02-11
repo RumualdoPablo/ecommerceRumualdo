@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Amatista Boutique | Carrito de compras</title>
+    <meta name="description"
+        content="Amatista Boutique es un emprendimiento a base de productos naturales. ¡Entra y conoce todo lo que tenemos para ofrecer!">
+    <meta name="keywords" content="natural, belleza, cosmetica, limpieza, energias">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Raleway:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/logoWeb.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Encabezado -->
+        <div class="row">
+            <div class="header">
+                <header>
+                    <a class="col-12 col-md-12 col-lg-12" href="../index.html">
+                        <img src="../images/logoWeb.png" alt="logo del emprendimiento" width="130" height="130">
+                    </a>
+                    <h1 class="cabeza col-12 col-md-12 col-lg-12">
+                        AMATISTA
+                    </h1>
+                </header>
+            </div>
+        </div>
+        <!-- Navegador -->
+        <div class="row">
+            <h2>
+                <div class="menuNav">
+                    <nav class="navbar navbar-expand-lg navbar-light" id="menu">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="navegador">
+                                <span class="navbar-toggler-icon botonMenu"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item"><a class="nav-link" href="../index.html"> Inicio </a></li>
+                                    <li class="nav-item"><a class="nav-link" href="../Paginas/productos.html"> Productos
+                                        </a></li>
+                                    <li class="nav-item"><a class="nav-link" href="../Paginas/sobreMi.html"> Sobre mi
+                                        </a></li>
+                                    <li class="nav-item"><a class="nav-link" href="../Paginas/contacto.html"> Contacto
+                                        </a></li>
+                                    <li class="nav-item">
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle btn-Carrito" type="button" id="botonCarrito" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Carrito <span id="carritoCantidad" class="badge badge-light">0</span>
+                                            </button>
+                                            <div id="carritoProductos" class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                                            </div>
+                                        </div>
+                                    </li>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </h2>
+        </div>
+        <!-- Cuerpo principal de la pagina, Ejemplificando la funcionalidad del carrito -->
+        <div class="row">
+            <div class="article col-12 col-md-12 col-lg-12">
+                <section class="container-Carrito">
+                    <table class="container-Carrito">
+                        <tr>
+                            <td class="items-Carrito">
+                                <img src="../images/aceiteUno.jpeg"  class="rounded-3" alt="Aceite de masajes" width="150" height="200">
+                            </td>
+                            <td class="info-Carrito">
+                                <strong>Aceite para masajes</strong>
+                            </td>
+                            <td class="info-Carrito">
+                                <select name="aceite" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                </select>
+                            </td>
+                            <td class="info-Carrito">
+                                <strong>$500</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="items-Carrito">
+                                <img src="../images/jabonUno.jpeg"  class="rounded-3" alt="Jabon" width="160" height="160">
+                            </td>
+                            <td class="info-Carrito">
+                                <strong>Jabon energetico</strong>
+                            </td>
+                            <td class="info-Carrito">
+                                <select name="jabon" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                </select>
+                            </td>
+                            <td class="info-Carrito">
+                                <strong>$300</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="info-Carrito">
+                                <strong>Total: $700</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="info-Carrito">
+                                <button class="btn rounded-pill items-btn-modal" type=""> <strong>Editar
+                                        carrito</strong> </button>
+                                <button class="btn rounded-pill items-btn-modal" type=""> <strong>Comprar</strong>
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </div>
+        <!-- Footer, con links a las redes sociales -->
+        <div class="row">
+            <div class="footer col-12 col-md-12 col-lg-12">
+                <footer>
+                    <h5>
+                        Tambien podes encontrarnos en Instagram!
+                        <a href="https://www.instagram.com/amatista.boutiquenatural/">
+                            <img src="../images/instagram.png" alt="link al perfil de Instagram" width="40" height="40">
+                        </a>
+                    </h5>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- CDN de la librería de Jquery  -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- CDN de Bootstrap del JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+</html>

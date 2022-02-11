@@ -1,0 +1,8 @@
+[
+    {"id": 1,"nombre":"Vela energetica" , "precio": 350, "imagen": "/images/velaUno.jpeg", "cantidad": 1},
+    {"id": 2,"nombre": "Vela floral", "precio": 350, "imagen": "../images/velaDos.jpg", "cantidad": 1},
+    {"id": 3,"nombre": "Perfume energizante", "precio": 400, "imagen": "../images/perfumeUno.jpeg", "cantidad": 1},
+    {"id": 4,"nombre": "Perfume armonización", "precio": 400, "imagen": "../images/perfumeDos.jpeg", "cantidad": 1},
+    {"id": 5,"nombre": "Jabon para limpieza energetica", "precio": 250, "imagen": "../images/JabonUno.jpeg", "cantidad": 1},
+    {"id": 6,"nombre": "Aceite para masajes", "precio": 200, "imagen": "../images/aceiteUno.jpeg", "cantidad": 1}
+]

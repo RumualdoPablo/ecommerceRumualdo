@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: #c48b8b;
+  padding: 0;
+}
+header a {
+  text-decoration: none;
+}
+header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 5vw;
+  color: #e0da94;
+  letter-spacing: 15px;
+  font-style: normal;
+  text-align: center;
+}
+
+/* Estilos del Navegador */
+
+#menu {
+  background-color: #c29f9fc9;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 10px;
+}
+#menu h2 {
+  padding: 0;
+}
+#menu ul li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+#menu ul li a {
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  transition: 1.5s;
+}
+#menu ul li a:hover {
+  background-color: #a18a8a;
+}
+
+.btn-Carrito{
+  background-color: #c29f9fc9;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 10px;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  transition: 1.5s;
+  float: right;
+}
+
+.btn-Carrito:hover{
+  background-color: #a18a8a;
+}
+
+
+.carritoProductos{
+  margin: 2px;
+  background-color: #b49090;
+}
+
+/* Estilos del Index */
+
+aside {
+  font-family: "Raleway", sans-serif;
+  margin-right: 5px;
+}
+aside h4 {
+  background-color: #c29f9fc9;
+  padding: 3px;
+}
+aside h4 p {
+  padding: 3px;
+}
+
+footer {
+  background-color: #d5adad;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.principal-Texto {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px;
+  flex-direction: row;
+}
+
+.principal-Imagenes {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  margin-top: 10px;
+}
+
+/* Estilos del Formulario */
+
+.formulario {
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+  font-family: "Raleway", sans-serif;
+  border-style: groove;
+  border-color:antiquewhite;
+}
+
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 1px solid ;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus,
+.formulario__consulta:focus {
+	border: 3px solid #c77979;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__consulta{
+	margin-top: 20px;
+}
+
+.formulario__checkbox {
+	display: flex;
+	align-items: flex-end;
+}
+
+.formulario__checkbox:checked{
+	color: brown;
+	background-color: brown;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: #d5adad;
+	color: black;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+  background-color: #b49090;
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: black;
+	background-color: rgb(216, 156, 156);
+	padding: 1rem;
+    font-weight: bold;
+	margin-top: 15px;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+/* Estilos de la sección Productos */
+.container-Productos {
+  list-style: none;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  background: linear-gradient(#c29f9f, #d6bebe, white);
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-flow: wrap;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+
+.items-Productos div {
+  color: black;
+  display: block;
+  padding: 5px 5px;
+  margin: 10px;
+  text-decoration: none;
+  text-align: center;
+  transition: transform 1s;
+}
+.items-Productos div:hover {
+  background-color: #c29f9f;
+  transform: scale(1.05, 1.05);
+}
+
+.items-Productos-card{
+  background-color: linear-gradient(#c29f9f,#d6bebe,white);
+}
+
+.items-btn-card {
+  background-color: #d5adad;
+  color:black;
+  font-family: "Raleway", sans-serif;
+  padding: 8px;
+  border: 0;
+  margin:5px;
+}
+.items-btn-card:hover {
+  background-color: #b49090;
+}
+
+/* Estilos de la sección "Sobre mí" */
+.info-SobreMi {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  color: black;
+}

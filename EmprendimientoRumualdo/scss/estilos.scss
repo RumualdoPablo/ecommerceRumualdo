@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+//Variables//
+
+$colorPrincipal:#c48b8b;
+$colorSecundario:#c29f9fc9;
+$colorFondoProductos: linear-gradient(#c29f9f,#d6bebe,white);
+$colorFuentePpal:#e0da94;
+$colorFuenteSecundaria: black;
+$fuenteTextos: "Raleway", sans-serif;
+
+//Estilo del encabezado//
+
+header{
+    background-color: $colorPrincipal;
+    padding: 0;
+
+    a{
+        text-decoration: none;
+    }
+
+    h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 5vw;
+    color: $colorFuentePpal;
+    letter-spacing: 15px;
+    font-style: normal;
+    text-align: center;
+
+    }
+}
+
+//Estilos del menu de navegación//
+
+#menu{
+    background-color: $colorSecundario;
+    font-family: $fuenteTextos;
+    margin-bottom: 10px;
+
+    h2{
+        padding: 0;
+    }
+
+    ul li{
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+    }
+
+    ul li a{
+        color: white;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        transition: 1.5s;
+    }
+
+    ul li a:hover{
+        background-color: #a18a8a;
+    }
+}
+
+//Aside//
+
+aside{
+    font-family: $fuenteTextos;
+    margin-right: 5px;
+    
+
+    h4{
+        background-color: $colorSecundario;
+        padding: 3px;
+
+        p{
+            padding: 3px;
+        }
+    }
+}
+
+//Footer//
+
+footer{
+    background-color: #d5adad;
+    text-align: center;
+    font-family: $fuenteTextos;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+//Estilo de la sección principal//
+
+// .principal-Container{
+//     display: flex;
+// }
+
+.principal-Texto{
+    font-family: $fuenteTextos;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+    flex-direction: row;
+}
+
+.principal-Imagenes{
+    font-family: $fuenteTextos;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    margin-top: 10px;
+}
+
+//Estilos de la sección "Productos"//
+
+.container-Productos{
+    list-style: none;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    background: $colorFondoProductos;
+    font-family: $fuenteTextos;
+    display: flex;
+    flex-flow: wrap;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+.items-Productos div{
+    color: $colorFuenteSecundaria;
+    display: block;
+    padding: 5px 5px;
+    margin: 10px;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 1s;
+
+    &:hover{
+        background-color: #c29f9f;
+        transform: scale(1.05,1.05);
+    }
+}
+
+.items-btn-modal{
+    background-color: #d5adad ;
+    &:hover{ background-color: #b49090;
+    }
+}
+
+// Estilo de la sección "Sobre Mi"//
+
+.info-SobreMi{
+    font-family: $fuenteTextos;
+    font-size: 1.5rem;
+    color:$colorFuenteSecundaria;
+
+}
